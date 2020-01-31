@@ -66,6 +66,7 @@ void loop() {
 
     Serial1.write((uint16_t) steinhart * 100);
     Serial1.write(light);
+    Serial1.write(0xFF); //HUMIDITY
     if (bt == 0){
       Serial1.write(0xFF);
     } else {
